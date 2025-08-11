@@ -1,0 +1,80 @@
+@use "../abstract/variables" as variables;
+
+.preview-card {
+    font-family: figtree, sans-serif;
+    font-size: 1.6rem;
+    
+    margin: 0 auto;
+    
+    max-width: 37rem;
+    padding: 2rem;
+    
+    background-color: variables.$color-white;
+
+    border-radius: 2rem;
+    border: 1px solid variables.$color-dark-grey;
+    box-shadow: 0.8rem 0.8rem 0rem variables.$color-dark-grey;
+
+    &-img {
+        border-radius: 1rem;
+        overflow: hidden;
+
+        img {
+            max-width: 100%;
+        } 
+    }
+}
+
+.article {
+    &-types {
+        &-tag {
+            background-color: variables.$color-yellow;
+            padding: .5rem 1.2rem;
+            
+            border-radius: 5px;
+
+            font-weight: variables.$weight-boldest;
+            display: inline-block;
+        }
+    }
+
+    &-publication-date {
+        display: inline-block;
+        color: variables.$color-dark-grey;
+        font-weight: variables.$weight-light;
+    }
+
+    &-title {
+        font-size: 2.4rem;
+        font-weight: variables.$weight-boldest;
+        transition: color .2s;
+
+        &:hover {
+            color: variables.$color-yellow;
+            cursor: pointer;
+        }
+    }
+
+    &-intro {
+        color: variables.$color-light-grey;
+        line-height: 2.4rem;
+    }
+
+    &-author {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+
+        &-avatar {
+            width: 3.2rem;
+
+            &-img {
+                max-width: 100%;
+            }
+        }
+
+        &-name {
+            font-weight: variables.$weight-boldest;
+        } 
+    }
+}
