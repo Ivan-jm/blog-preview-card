@@ -7,19 +7,20 @@
     margin: 0 auto;
     
     max-width: 37rem;
-    padding: 2rem;
+    padding: 2.1rem;
     
     background-color: variables.$color-white;
 
     border-radius: 2rem;
-    border: 1px solid variables.$color-dark-grey;
+    border: 0.1rem solid variables.$color-dark-grey;
     box-shadow: 0.8rem 0.8rem 0rem variables.$color-dark-grey;
 
     &-img {
-        border-radius: 1rem;
+        border-radius: 1.2rem;
         overflow: hidden;
 
         img {
+            display: block;
             max-width: 100%;
         } 
     }
@@ -28,10 +29,11 @@
 .article {
     &-types {
         &-tag {
+            font-size: 1.4rem;
             background-color: variables.$color-yellow;
-            padding: .5rem 1.2rem;
+            padding: .6rem 1.2rem;
             
-            border-radius: 5px;
+            border-radius: 0.5rem;
 
             font-weight: variables.$weight-boldest;
             display: inline-block;
@@ -39,12 +41,14 @@
     }
 
     &-publication-date {
+        font-size: 1.4rem;
+        font-weight: variables.$weight-light;
         display: inline-block;
         color: variables.$color-dark-grey;
-        font-weight: variables.$weight-light;
     }
 
     &-title {
+        margin: 1.6rem 0;
         font-size: 2.4rem;
         font-weight: variables.$weight-boldest;
         transition: color .2s;
@@ -57,6 +61,7 @@
 
     &-intro {
         color: variables.$color-light-grey;
+        font-weight: variables.$weight-light;
         line-height: 2.4rem;
     }
 
@@ -69,11 +74,13 @@
             width: 3.2rem;
 
             &-img {
+                display: block;
                 max-width: 100%;
             }
         }
 
         &-name {
+            font-size: 1.4rem;
             font-weight: variables.$weight-boldest;
         } 
     }
