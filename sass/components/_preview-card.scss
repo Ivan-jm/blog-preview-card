@@ -2,7 +2,7 @@
 
 .preview-card {
     font-family: figtree, sans-serif;
-    font-size: 1.6rem;
+    font-size: variables.$font-size-md;
     
     margin: 0 auto;
     
@@ -29,7 +29,7 @@
 .article {
     &-types {
         &-tag {
-            font-size: 1.4rem;
+            font-size: variables.$font-size-sm;
             background-color: variables.$color-yellow;
             padding: .6rem 1.2rem;
             
@@ -41,7 +41,7 @@
     }
 
     &-publication-date {
-        font-size: 1.4rem;
+        font-size: variables.$font-size-sm;
         font-weight: variables.$weight-light;
         display: inline-block;
         color: variables.$color-dark-grey;
@@ -49,7 +49,7 @@
 
     &-title {
         margin: 1.6rem 0;
-        font-size: 2.4rem;
+        font-size: variables.$font-size-bg;
         font-weight: variables.$weight-boldest;
         transition: color .2s;
 
@@ -80,7 +80,7 @@
         }
 
         &-name {
-            font-size: 1.4rem;
+            font-size: variables.$font-size-sm;
             font-weight: variables.$weight-boldest;
         } 
     }
